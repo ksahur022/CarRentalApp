@@ -1,0 +1,164 @@
+/* Prevent horizontal overflow on the entire page */
+body,
+html {
+    overflow-x: hidden;
+    height: 100%;
+}
+
+/* Home Page Styles */
+.home-page {
+    width: 100%;
+    padding: 0 20px;
+    background-color: #FFFBF3;
+    box-sizing: border-box;
+}
+
+/* Page Title */
+.page-title {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.page-title h1 {
+    padding: 10px 0;
+    max-width: 700px;
+    font-size: 50px;
+    line-height: 1.2;
+}
+
+/* Popular Cars Header */
+.popular-cars-header {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.popular-cars-header h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #757575;
+}
+
+/* View All Cars Header */
+.view-all-cars-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+}
+
+.view-all-cars-header h2 {
+    font-size: 20px;
+    color: #333;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Car Cards Container */
+.car-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+    gap: 17px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Map Container */
+.map-container {
+    display: flex;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .page-title h1 {
+        font-size: 42px;
+    }
+
+    .popular-cars-header h2 {
+        font-size: 22px;
+    }
+
+    .view-all-cars-header h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .car-cards-container {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        padding: 0 10px;
+    }
+
+    .page-title h1 {
+        font-size: 36px;
+    }
+
+    .popular-cars-header h2 {
+        font-size: 20px;
+    }
+
+    .view-all-cars-header {
+        margin-right: 20px;
+    }
+
+    .view-all-cars-header h2 {
+        font-size: 16px;
+    }
+
+    .map-container {
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title h1 {
+        font-size: 30px;
+    }
+
+    .popular-cars-header h2,
+    .view-all-cars-header h2 {
+        font-size: 16px;
+    }
+
+    .car-cards-container {
+        grid-template-columns: 1fr;
+        padding: 0 5px;
+    }
+
+    .map-container {
+        flex-direction: column;
+        padding: 0 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .page-title h1 {
+        font-size: 26px;
+        padding: 5px 0;
+    }
+
+    .popular-cars-header h2,
+    .view-all-cars-header h2 {
+        font-size: 14px;
+    }
+
+    .car-cards-container {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 0 5px;
+    }
+
+    .map-container {
+        flex-direction: column;
+        padding: 0 5px;
+    }
+
+    .view-all-cars-header {
+        margin-right: 10px;
+    }
+}

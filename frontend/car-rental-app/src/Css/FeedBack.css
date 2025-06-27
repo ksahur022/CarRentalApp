@@ -1,0 +1,123 @@
+.feedback-container {
+    padding: 20px;
+    background-color: #FFFBF3;
+    border-radius: 3px;
+    margin: 20px auto;
+}
+
+.feedback-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+.feedback-content {
+    display: flex;
+    align-items: center;
+}
+
+.feedback-item {
+    height: 250px;
+    background-color: #FFFBF3;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(25% - 15px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.feedback-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.feedback-image {
+    width: 30%;
+    overflow: hidden;
+}
+
+.feedback-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.feedback-details {
+    width: 70%;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.car-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.order-history,
+.rating,
+.comment {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .feedback-item {
+        width: calc(33.33% - 15px);
+        /* 3 items per row for larger tablets and small desktops */
+    }
+}
+
+@media (max-width: 1024px) {
+    .feedback-item {
+        width: calc(50% - 15px);
+        /* 2 items per row on medium screens like smaller tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback-items {
+        flex-direction: column;
+        /* Stack items on small screens */
+    }
+
+    .feedback-item {
+        width: 100%;
+        /* Full width on small screens */
+        margin-bottom: 10px;
+        /* Space below each item */
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-title {
+        font-size: 20px;
+        /* Smaller font for small devices */
+    }
+
+    .feedback-item {
+        height: auto;
+        /* Allow items to grow on very small screens */
+    }
+
+    .feedback-details {
+        padding: 8px;
+        /* Smaller padding for mobile screens */
+    }
+
+    .car-title {
+        font-size: 18px;
+        /* Smaller title for mobile */
+    }
+
+    .order-history,
+    .rating,
+    .comment {
+        font-size: 14px;
+        /* Smaller font size for mobile screens */
+    }
+}

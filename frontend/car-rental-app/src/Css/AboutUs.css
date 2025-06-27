@@ -1,0 +1,117 @@
+.about-us-container {
+    padding: 20px;
+}
+
+.about-us-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-us-column {
+    display: flex;
+    margin: 30px 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #FFFBF3;
+    gap: 10px;
+}
+
+.about-us-title {
+    font-size: 22px;
+    color: #666666;
+    font-family: Inter;
+}
+
+.about-us-header {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.about-us-number {
+    font-size: 78px;
+    color: #000000;
+}
+
+.about-us-description {
+    font-size: 18px;
+    color: #000000;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .about-us-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .about-us-title {
+        font-size: 20px;
+    }
+
+    .about-us-header {
+        font-size: 35px;
+    }
+
+    .about-us-number {
+        font-size: 70px;
+    }
+
+    .about-us-description {
+        font-size: 16px;
+    }
+}
+
+/* For smaller screens like iPhone SE */
+@media (max-width: 768px) {
+    .about-us-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .about-us-title {
+        font-size: 18px;
+    }
+
+    .about-us-header {
+        font-size: 30px;
+    }
+
+    .about-us-number {
+        font-size: 60px;
+    }
+
+    .about-us-description {
+        font-size: 15px;
+    }
+
+    .about-us-column {
+        padding: 15px;
+        margin: 15px 0px;
+    }
+}
+
+/* For very small screens (e.g., small mobiles like iPhone 5, SE, etc.) */
+@media (max-width: 375px) {
+    .about-us-title {
+        font-size: 16px;
+    }
+
+    .about-us-header {
+        font-size: 26px;
+    }
+
+    .about-us-number {
+        font-size: 50px;
+    }
+
+    .about-us-description {
+        font-size: 14px;
+    }
+
+    .about-us-column {
+        padding: 10px;
+        margin: 10px 0px;
+    }
+}

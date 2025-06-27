@@ -1,0 +1,94 @@
+.map-container {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.map-wrapper {
+    width: 100%;
+}
+
+.map-heading {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 100;
+}
+
+.map-column-left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.map-column-right {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.map-row {
+    flex: 1;
+    padding: 10px;
+    background-color: #FFFBF3;
+    border-bottom: 1px solid lightgrey;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 1024px) {
+    .map-container {
+        flex-direction: column; /* Stack columns vertically on medium screens */
+        padding: 0 10px; /* Reduce padding */
+    }
+
+    .map-column-left,
+    .map-column-right {
+        width: 100%; /* Full width for both columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        padding: 0 10px; /* Less padding on small screens */
+    }
+
+    .map-heading {
+        font-size: 18px; /* Reduce font size for small screens */
+    }
+
+    .map-column-left {
+        width: 100%; /* Full width for the left column on smaller screens */
+    }
+
+    .map-column-right {
+        width: 100%; /* Full width for the right column on smaller screens */
+    }
+
+    .map-row {
+        padding: 8px; /* Reduce padding in rows for mobile screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .map-heading {
+        font-size: 16px; /* Further reduce font size for very small screens */
+    }
+
+    .map-row {
+        padding: 6px; /* Even smaller padding for very small screens */
+    }
+}

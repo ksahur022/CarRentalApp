@@ -1,0 +1,159 @@
+.form-container {
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #FFFBF3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.form-grid.second-row {
+    grid-template-columns: 1fr 1fr 1fr 1.5fr 1fr;
+}
+
+.form-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-item.narrow {
+    max-width: 100%;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.clear-all-filter-btn {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #CC1D1D;
+    border: 1px solid #CC1D1D;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.find-a-car-btn {
+    padding: 10px 20px;
+    background-color: #CC1D1D;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+select,
+input[type="date"],
+input[type="range"] {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+    border: 1px solid #b4ab9c;
+    width: 100%;
+    background-color: #FFFBF3;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.clear-filters {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear-all-filter-btn {
+    width: 150px;
+    border: none;
+    color: #CC1D1D;
+    font-weight: bold;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .form-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-container {
+        padding: 10px;
+    }
+
+    .clear-all-filter-btn {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* Move the Find a Car button below */
+    .find-a-car-btn {
+        width: 100%;
+        margin-top: 10px;
+        padding: 12px 0;
+    }
+}
+
+@media (max-width: 375px) {
+
+    /* For smaller screens like iPhone SE */
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .form-item {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    select,
+    input[type="date"],
+    input[type="range"] {
+        font-size: 0.85rem;
+    }
+
+    .find-a-car-btn {
+        width: 100%;
+        /* Ensure the button takes full width */
+        font-size: 1rem;
+        margin-top: 10px;
+        /* Adjust margin for spacing */
+        padding: 12px 0;
+        /* Adjust padding for small screens */
+    }
+
+    .clear-all-filter-btn {
+        width: 100%;
+        font-size: 1rem;
+    }
+}

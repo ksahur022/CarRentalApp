@@ -1,0 +1,266 @@
+.login-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #FFFBF3;
+    box-sizing: border-box;
+}
+
+.login-image-container,
+.login-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+.login-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    max-height: 100vh;
+}
+
+.success-notification-container {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #bdd5c2;
+    color: black;
+    border: 1px solid #d6e9c6;
+    padding: 15px;
+    border-radius: 5px;
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+}
+
+.notification-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #bdd5c2;
+}
+
+.notification-content h2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.close-button {
+    border: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    padding: 0;
+}
+
+.error-message {
+    color: #CC1D1D;
+    margin: 10px 0;
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 25px !important;
+    top: 80%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.eye-icon.active {
+    opacity: 1;
+}
+
+.login-container {
+    flex-direction: column;
+    background-color: #FFFBF3;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    padding: 20px;
+    max-height: 100vh;
+}
+
+.login-text-container {
+    max-width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-text-container h1 {
+    font-size: 50px;
+    color: #000;
+    font-weight: 600;
+}
+
+.login-text-container p {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.login-feilds {
+    width: 100%;
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-feilds form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login-feilds label {
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.login-feilds input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 410px;
+}
+
+.login-feilds p {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.login-feilds button {
+    padding: 10px;
+    background-color: #CC1D1D;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 410px;
+}
+
+.login-feilds button:hover {
+    background-color: #a41616;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.login-feilds>div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    margin-top: 20px;
+}
+
+.new-here {
+    font-size: 20px;
+    font-weight: 200;
+    margin: 0;
+}
+
+.create-an-account {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .login-text-container h1 {
+        font-size: 40px;
+    }
+
+    .login-text-container p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-main-container {
+        flex-direction: column;
+    }
+
+    .login-image-container,
+    .login-container {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .login-image-container {
+        order: 2;
+    }
+
+    .login-container {
+        order: 1;
+        max-width: 100%;
+    }
+
+    .login-feilds {
+        max-width: 100%;
+    }
+
+    .login-text-container h1 {
+        font-size: 35px;
+    }
+
+    .login-text-container p {
+        font-size: 16px;
+    }
+
+    .success-notification-container {
+        width: 90%;
+        max-width: 350px;
+        top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-text-container h1 {
+        font-size: 30px;
+    }
+
+    .login-text-container p {
+        font-size: 14px;
+    }
+
+    .login-feilds input,
+    .login-feilds button {
+        max-width: 100%;
+    }
+
+    .success-notification-container {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

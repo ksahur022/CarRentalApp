@@ -1,0 +1,149 @@
+/* CarReservation.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fdf8f4;
+    /* Light beige background */
+}
+
+.car-booking-page {
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.booking-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.info-text {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #333;
+}
+
+.location-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.info-label {
+    font-size: 14px;
+    color: #666;
+}
+
+.change-button {
+    background-color: transparent;
+    border: none;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.change-button:hover {
+    text-decoration: underline;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+}
+
+.car-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.car-image {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.car-details {
+    padding: 20px;
+}
+
+.car-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.car-location {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.car-pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.total-label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.total-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+}
+
+.deposit-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.confirm-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #d32f2f;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #b71c1c;
+}
